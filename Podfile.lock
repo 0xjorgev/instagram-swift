@@ -1,0 +1,22 @@
+PODS:
+  - PureLayout (3.0.2)
+  - SwiftInstagram (1.1.1):
+    - SwiftInstagram/Core (= 1.1.1)
+  - SwiftInstagram/Core (1.1.1)
+
+DEPENDENCIES:
+  - PureLayout
+  - SwiftInstagram (~> 1.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PureLayout
+    - SwiftInstagram
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SwiftInstagram: 5f60415e522d1a7721073eb3a66f254a7c40fd63
+
+PODFILE CHECKSUM: db76b5d713c13cfba52c26efefaa6d93d2a2ea39
+
+COCOAPODS: 1.5.3
