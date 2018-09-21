@@ -6,6 +6,7 @@ target 'Instagram-login' do
   use_frameworks!
   pod 'SwiftInstagram', '~> 1.1.1'
   pod 'PureLayout'
+  pod 'InstagramLogin'
 
   # Pods for Instagram-login
 

@@ -41,15 +41,7 @@
 	</array>
 	<key>InstagramClientId</key>
 	<string>83d63024835245c8ac303caaf3b853e4</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>New item</key>
-			<string>www.massolabs.com</string>
-		</dict>
-	</dict>
 	<key>InstagramRedirectURI</key>
-	<string>http://www.massolabs.com</string>
+	<string>https://www.codefuel.me</string>
 </dict>
 </plist>

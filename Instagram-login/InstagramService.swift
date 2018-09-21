@@ -15,16 +15,43 @@ class InstagramService:NSObject {
     
     let api = Instagram.shared
     
-    func something(){
+    func login(){
         
         let del = (UIApplication.shared.delegate as! AppDelegate)
         
-        api.login(from:del.navigation!  , success: {
+        api.login(from: del.navigation!, withScopes: [.basic], success: {
             
-            print("Yes i did it!")
+        }, failure: {
+            error in print("Error: \(error) Nop it doesn't work at all")
+        })
+    }
+    
+    func isAuthenticated() -> Bool {
+        
+        return api.isAuthenticated
+        
+    }
+    
+    func instagramLogout() {
+        api.logout()
+    }
+    
+    func getUserData(completion: @escaping ([String]?) -> Void) {
+        
+        api.user("self", success: { list in
+            completion([
+                "Username: \(list.username ?? "")"
+                ,"Fullname: \(list.fullName ?? "")"
+                ,"Bio: \(list.bio ?? "")"
+                ,"Website: \(list.website ?? "")"
+                ,"Media: \(list.counts?.media ?? 0)"
+                ,"Follows: \(list.counts?.follows ?? 0)"
+                ,"Followed By: \(list.counts?.followedBy ?? 0)"
+            ])
             
         }, failure: { error in
-            print("Error: \(error) Nop it doesn't work at all")
+            completion([])
+            print("Error: \(error)")
         })
     }
     

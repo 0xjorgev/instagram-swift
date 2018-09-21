@@ -50,6 +50,7 @@
 		185553A02152952F000DF39B /* Instagram_loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_loginUITests.swift; sourceTree = "<group>"; };
 		185553A22152952F000DF39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B09B432152A8710079F25E /* InstagramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
+		18C0A32C21547AB1000F437C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18DDBF58DF8CDEA987B70522 /* Pods_Instagram_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		673E259B478CD3D58BD645C6 /* Pods-Instagram-loginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-loginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram-loginUITests/Pods-Instagram-loginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68140ABD4860BA8DED1B21EF /* Pods_Instagram_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_loginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +93,7 @@
 		185553742152952E000DF39B = {
 			isa = PBXGroup;
 			children = (
+				18C0A32C21547AB1000F437C /* README.md */,
 				1855537F2152952E000DF39B /* Instagram-login */,
 				185553942152952F000DF39B /* Instagram-loginTests */,
 				1855539F2152952F000DF39B /* Instagram-loginUITests */,
@@ -302,11 +304,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Instagram-login/Pods-Instagram-login-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/InstagramLogin/InstagramLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
 			);
